@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Lightbox for Gallery
-    const galleryImages = document.querySelectorAll('.gallery-grid img');
+    // 3. Lightbox for Images
+    const gridImages = document.querySelectorAll('.image-grid img');
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     const lightboxClose = document.getElementById('lightbox-close');
 
-    if (galleryImages.length > 0 && lightbox) {
-        galleryImages.forEach(img => {
+    if (gridImages.length > 0 && lightbox) {
+        gridImages.forEach(img => {
             img.addEventListener('click', function() {
                 lightbox.style.display = 'flex';
                 lightboxImg.src = this.src;
